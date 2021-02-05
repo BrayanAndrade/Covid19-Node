@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Covid Estados</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <div class="container-fluid bg-dark vh-100">
+    <div class="container bg-dark pt-5">
+      <div class="card text-white">
+        <div class="card-body bg-dark">
+          <h3 class="display-4 text-white">Ultima atualização <%= dado.state %>
+          </h3><br>
+          <p class="text-danger"><strong>Estado: </strong>
+            <%= dado.state %>
+          </p>
+          <p class="text-danger"><strong>Casos confirmados: </strong>
+            <%= dado.cases%>
+          </p>
+          <p class="text-danger"><strong>Mortes confirmadas: </strong>
+            <%= dado.deaths %>
+          </p>
+          <p class="text-danger"><strong>Casos Suspeitos: </strong>
+            <%= dado.suspects %>
+          </p>
+          <p class="text-danger"><strong>Ultima atualização: </strong>
+            <%= dado.datetime %>
+          </p>
+        </div>
+        <a href="/" class="btn btn-danger">Verificar outro Estado</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
